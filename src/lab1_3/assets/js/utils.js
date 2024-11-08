@@ -12,6 +12,7 @@ function drawPoint(ctx, x, i, radius, color) {
   ctx.fill();
 
   // restore style
+  ctx.beginPath();
   ctx.strokeStyle = preventStrokeStyle;
   ctx.fillStyle = preventFillStyle;
 }
