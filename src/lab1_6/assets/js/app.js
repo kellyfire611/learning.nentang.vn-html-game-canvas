@@ -42,6 +42,19 @@ function init() {
     ctx.fillStyle = grad3;
     ctx.arc(250, 80, 60, 0, 2 * Math.PI);
     ctx.fill();
+
+    // Ví dụ 4: text với gradient
+    // Tạo linear gradient
+    const grad4 = ctx.createLinearGradient(0, 0, 200, 0);
+    grad4.addColorStop(0, "red");
+    grad4.addColorStop(0.5, "green");
+    grad4.addColorStop(1, "blue");
+
+    // Vẽ hình chữ nhật với màu nền gradient
+    ctx.beginPath();
+    ctx.font = "30px Arial";
+    ctx.fillStyle = grad4;
+    ctx.fillText("NenTang.vn", 20, 230);
     
   } else {
     // Trình duyệt không hỗ trợ HTML Canvas -> hiển thị thông báo ra màn hình
