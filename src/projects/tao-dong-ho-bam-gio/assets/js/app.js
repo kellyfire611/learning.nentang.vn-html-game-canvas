@@ -37,7 +37,10 @@ function init() {
 			ctx.lineWidth = radius * 0.1;
 			ctx.stroke();
 
-			//
+			// https://expo.dev/blog/the-beauty-of-mathematics-in-crafting-stunning-animations
+			// Calculate the X and Y Positions:
+			// x = radius * cos(angle) + centerX
+			// y = radius * sin(angle) + centerY
 			for(let sec = 0; sec < 60; sec++) {
 				let ang = (sec * Math.PI) / 30;
 				let x1 = (radius * 0.9) * Math.sin(ang);
